@@ -1,0 +1,31 @@
+body,
+html,
+#root {
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+  overflow-x: hidden;
+}
+
+#root::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(
+      ellipse at 60% 40%,
+      rgba(0, 255, 255, 0.12) 0%,
+      rgba(10, 10, 35, 0.95) 70%
+    ),
+    url("/background.png") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #0a0a23;
+  filter: brightness(0.7) saturate(1.1);
+}

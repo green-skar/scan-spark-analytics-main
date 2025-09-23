@@ -1,0 +1,30 @@
+/* Neon Glow Theme */
+.neon-bg {
+  background: #0a0a23;
+  color: #e0e0ff;
+}
+.neon-sidebar-bg {
+  background: linear-gradient(135deg, #0a0a23 80%, #00f0ff 100%);
+  box-shadow: 0 0 20px #00f0ff44;
+}
+.neon-main-bg {
+  background: #11112a;
+  box-shadow: 0 0 40px #00f0ff22;
+}
+.neon-card {
+  background: #181840;
+  border-radius: 1rem;
+  box-shadow: 0 0 16px #00f0ff88;
+  border: 1px solid #00f0ff44;
+}
+.neon-btn {
+  background: #00f0ff;
+  color: #0a0a23;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px #00f0ffcc;
+  font-weight: bold;
+  transition: box-shadow 0.2s;
+}
+.neon-btn:hover {
+  box-shadow: 0 0 24px #00f0ff;
+}
