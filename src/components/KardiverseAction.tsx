@@ -51,7 +51,10 @@ const KardiverseAction = ({
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-hero flex items-center justify-center p-4">
+      <div
+        className="min-h-screen flex items-center justify-center p-4"
+        style={{ backgroundColor: "hsl(var(--background))" }}
+      >
         <Card className="max-w-sm w-full bg-background/10 backdrop-blur-sm border border-primary/30 text-foreground animate-scale-in">
           <CardContent className="text-center p-8">
             <div className="mb-6">
@@ -86,7 +89,13 @@ const KardiverseAction = ({
             {/* Sponsor */}
             <div className="mt-6 pt-4 border-t border-primary/20">
               <p className="text-xs text-foreground/60">Powered by</p>
-              <div className="text-lg font-bold text-red-500">{sponsor}</div>
+              <div className="flex items-center justify-center">
+                <img
+                  src="/saf-logo.png"
+                  alt="Safaricom Logo"
+                  className="h-32 w-auto"
+                />
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -95,7 +104,10 @@ const KardiverseAction = ({
   }
 
   return (
-    <div className="min-h-screen bg-gradient-hero flex items-center justify-center p-4">
+    <div
+      className="min-h-screen flex items-center justify-center p-4"
+      style={{ backgroundColor: "hsl(var(--background))" }}
+    >
       <Card className="max-w-sm w-full bg-background/10 backdrop-blur-sm border border-primary/30 text-foreground animate-fade-in">
         <CardContent className="text-center p-8">
           {/* Header with Logo */}
@@ -185,7 +197,11 @@ const KardiverseAction = ({
           {/* Sponsor */}
           <div className="mt-6 pt-4 border-t border-primary/20">
             <div className="flex items-center justify-center">
-              <div className="text-red-500 font-bold text-lg">{sponsor}</div>
+              <img
+                src="/saf-logo.png"
+                alt="Safaricom Logo"
+                className="h-32 w-auto"
+              />
             </div>
           </div>
         </CardContent>
