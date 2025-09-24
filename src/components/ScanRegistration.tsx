@@ -59,7 +59,7 @@ const ScanRegistration: React.FC = () => {
           </tbody>
         </table>
       </div>
-      {scans.length > 5 && (
+      {scans.length > 2 && (
         <button className="neon-btn mt-4" onClick={() => setModalOpen(true)}>
           More Scans
         </button>
